@@ -1,0 +1,35 @@
+General Summary
+==================================================
+The main goal of the document is to provide the U.S. Nuclear Regulatory Commission (NRC) with advance information regarding the Nuclear Criticality Safety Code Validation for the American Centrifuge Plant. The purpose is to allow the NRC additional time for review prior to the receipt of the high-assay low enriched uranium (HALEU) Demonstration Program proposed license amendment request. The code validation establishes the area of interest for the ACO HALED process and evaluates benchmark experiments to establish code system bias, bias uncertainty, and an upper subcritical limit. The document also provides justification for using a minimum margin of subcriticality of 0.02 for the American Centrifuge Plant Upper Subcritical Limit determination. Additionally, the document contains Official Use Only and Proprietary Information and requests that the enclosure be withheld from public disclosure.
+
+Main Conclusions and Findings
+==================================================
+- ACO has submitted a Nuclear Criticality Safety Code Validation for the American Centrifuge Plant to the NRC for review.
+- The proposed license amendment request for the HALEU Demonstration Program will be submitted in the second quarter of 2020.
+- The validation establishes the area of interest for the ACO HALEU process and evaluates benchmark experiments to establish code system bias, bias uncertainty, and an upper subcritical limit.
+- A minimum margin of subcriticality of 0.02 is justified for the American Centrifuge Plant Upper Subcritical Limit determination.
+- ACO is available to support a discussion with the NRC to address questions or clarify issues regarding the enclosed report.
+
+Detailed Section Summaries
+==================================================
+
+- Official Use Only and Proprietary Information
+-----------------------------------------------
+The section discusses the submission of a nuclear criticality safety code validation report to the U.S. Nuclear Regulatory Commission (NRC) for review. The report contains Proprietary Information and Official Use Only information, and the sender requests that it be withheld from public disclosure. The validation establishes the area of interest for the HALED process and evaluates benchmark experiments to establish code system bias and an upper subcritical limit. A minimum margin of subcriticality of 0.02 is justified for the American Centrifuge Plant Upper Subcritical Limit determination. The sender, American Centrifuge Operating, LLC, is available to discuss the report with the NRC to address questions or clarify issues after the staff has reviewed it.
+
+- Submittal of Nuclear Criticality Safety Code Validation for the American Centrifuge Plant
+-------------------------------------------------------------------------------------------
+The letter provides an advance copy of an engineering evaluation for the Nuclear Criticality Safety (NCS) Code Validation of the American Centrifuge Plant. This validation is necessary for the receipt of the high-assay low enriched uranium (HALEU) Demonstration Program proposed license amendment request. The code validation establishes the area of interest for the plant's process and evaluates benchmark experiments to determine code system bias, bias uncertainty, and an upper subcritical limit. The validation justifies using a minimum margin of subcriticality of 0.02 for the plant's Upper Subcritical Limit determination. The enclosed report contains Official Use Only and Proprietary Information, and a discussion with the U.S. Nuclear Regulatory Commission (NRC) is available to address questions or clarify issues.
+
+- Purpose of the Letter
+-----------------------
+The purpose of the letter is to provide an advance copy of an engineering evaluation regarding Nuclear Criticality Safety Code Validation for the American Centrifuge Plant to the U.S. Nuclear Regulatory Commission. This validation establishes the area of interest for the HALED process and evaluates benchmark experiments to establish code system bias, bias uncertainty, and an upper subcritical limit. The letter also mentions that a proposed license amendment request will be submitted to the NRC in the second quarter of 2020. ACO is available to support a discussion with the NRC after they have reviewed the enclosed report. If there are any questions regarding this matter, Jonathan Corrado can be contacted at (740) 897-3285.
+
+- Proposed License Amendment Request
+------------------------------------
+The section discusses the proposed license amendment request (LAR) for the high-assay low enriched uranium (HALEU) Demonstration Program, which will be submitted to the NRC in the second quarter of 2020. The code validation in the report establishes the area of interest for the American Centrifuge Operating, LLC (ACO) HALED process and evaluates benchmark experiments to establish code system bias, bias uncertainty, and an upper subcritical limit. The validation also justifies the use of a minimum margin of subcriticality of 0.02 for the American Centrifuge Plant Upper Subcritical Limit determination. ACO is available to support a discussion with the NRC after their review of the report. The enclosure contains Proprietary Information and Official Use Only information, and it is requested that it be withheld from public disclosure. Kelly L. Wiehle, Regulatory Manager, signed the letter.
+
+- Availability for Discussion with NRC
+--------------------------------------
+The section outlines the submission of an engineering evaluation to the U.S. Nuclear Regulatory Commission (NRC) regarding Nuclear Criticality Safety Code Validation for the American Centrifuge Plant. The purpose of the letter is to provide the NRC with additional time for review before the receipt of the high-assay low enriched uranium (HALEU) Demonstration Limit determination. It states that after the NRC staff reviews the report, ACO is available for discussion to address any questions or clarify issues. The submission contains proprietary and official use only information and requests that it be withheld from public disclosure. The Regulatory Manager, Kelly L. Wiehle, provides contact information for any questions regarding the matter.
+

@@ -1,0 +1,38 @@
+General Summary
+==================================================
+The document discusses the importance of reasoning models that employ reasoning at inference time, such as OpenAI o-family models, Gemini 2.0 Flash Thinking, and DeepSeek R1. These models achieve state-of-the-art results on challenging benchmarks and aim to surpass human ability. The benchmarks evaluate models on difficult tasks, including college-level math problems and programming challenges. The document also highlights new failure modes in reasoning models and the need to verify and explain answers. It concludes with a benchmark for reasoning models that exercise general knowledge and are challenging for both humans and models, pointing out areas for improvement in reasoning models.
+
+Main Conclusions and Findings
+==================================================
+Main conclusions and key takeaways from the document:
+
+1. A benchmark for reasoning models with U.S.-centric general knowledge questions has been presented, challenging for both humans and models, but easily verifiable.
+2. New failure modes in reasoning models have been uncovered, such as models giving up on difficult problems and getting stuck "thinking forever".
+3. Deep analysis of reasoning outputs of R1 and Gemini Thinking has allowed for quantifying the effectiveness of reasoning longer, reaching a plateau in accuracy beyond a certain token budget.
+4. Models can fail to search and give up after several minutes, producing incorrect answers or claiming the question is unsolvable, but can quickly verify and explain correct answers when prompted.
+5. The benchmark reveals capability gaps and failure modes between models not evident in existing benchmarks, with OpenAI o1 outperforming DeepSeek R1 in some cases.
+6. Solutions to the benchmark problems are difficult to find but easy to verify, highlighting the importance of developing benchmarks with problems that can be understood with general knowledge.
+
+Detailed Section Summaries
+==================================================
+
+Categories with 7 members
+-------------------------
+The section discusses the process of solving a riddle involving categories with 7 members, such as days of the week, colors of the rainbow, and continents. The example of continents is explored in detail, with the conclusion that the last letter alphabetically is E. The section also touches on the idea of reasoning budgets and the distribution of reasoning output lengths. It mentions the uncertainty in output from models like R1 and Gemini Thinking, where they may initially provide a wrong answer before correcting themselves. The section emphasizes the importance of benchmarks that test reasoning abilities with general knowledge problems that are difficult to solve but easy to verify.
+
+Missing context in challenges
+-----------------------------
+The section discusses the importance of adding context to challenges, such as including the current date or specifying the location, to make the challenges more understandable. It also mentions that most challenges have unique solutions or a small number of solutions, and some challenges explicitly require the use of a dictionary or atlas to solve them. The Sunday Puzzle Challenge Dataset is curated from NPR Sunday puzzles, and the findings reveal that the challenges are difficult for both humans and models to solve. The study highlights capability gaps in reasoning models and identifies failures in model responses, such as arithmetic mistakes and giving up on searching for answers.
+
+Alternative solutions
+---------------------
+The section on 'Alternative solutions' discusses the challenges faced by reasoning models in solving complex puzzles. It highlights how models can make mistakes even on small numbers and can give up or produce incorrect answers after several minutes of reasoning. By prompting the models to verify and explain the true answer, they can succeed at the verification task. DeepSeek R1 and Gemini Thinking allow for deeper analysis by recording textual reasoning steps. The section also mentions the challenges of benchmarks requiring context and the unique solutions to most challenges. The section concludes that these puzzles are challenging even for the latest reasoning models, revealing capability gaps and failure modes not seen in existing benchmarks. OpenAI o1 outperforms other models tested, and some models get stuck "thinking forever" or explicitly give up on certain challenges.
+
+Related work
+------------
+The section on 'Related Work' discusses benchmarks designed to test models' capabilities in challenging domains, such as GPQA and HLE, created by experts with PhD-level knowledge. These benchmarks are difficult for both humans and models to solve and verify. The study introduces a new benchmark based on the NPR Sunday Puzzle Challenge, focusing on general knowledge that is challenging for both humans and models, but easy to verify. This benchmark reveals capability differences among reasoning models, with OpenAI o1 outperforming others. The study emphasizes the importance of developing benchmarks with problems that are understandable with general knowledge, difficult to solve, but easy to verify, highlighting the need for machine-checkable benchmarks like the one presented.
+
+Amount of reasoning necessary
+-----------------------------
+The section discusses the importance of determining the amount of reasoning necessary for models to produce correct answers. The R1 and Gemini Thinking models show that accuracy plateaus at around 10,000 reasoning output tokens for Gemini Thinking, while it plateaus later for R1. R1 starts outperforming Gemini Thinking with a reasoning budget of around 3,000 tokens. The study also uncovers new failure modes in reasoning models, such as giving up on difficult problems or getting stuck "thinking forever". The findings suggest that reasoning length is crucial for achieving accuracy in tasks and can help identify the point beyond which reasoning is unlikely to produce a correct answer.
+

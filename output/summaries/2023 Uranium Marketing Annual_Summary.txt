@@ -1,0 +1,34 @@
+General Summary
+==================================================
+The main goal of the document is to provide detailed data on uranium marketing activities in the United States from 2018 through 2023, with summary data dating back to 2002. The report is based on information reported on Form EIA-858, the Uranium Marketing Annual Survey, which collects data on contracts, deliveries, enrichment services purchased, inventories, and other related aspects of the uranium market. The report is prepared by the U.S. Energy Information Administration (EIA), an independent statistical and analytical agency within the U.S. Department of Energy, and aims to provide stakeholders with valuable insights into the uranium market trends and dynamics.
+
+Main Conclusions and Findings
+==================================================
+Main Conclusions and Key Takeaways:
+
+1. The report provides detailed data on uranium marketing activities in the United States from 2018 through 2023, with summary data going back to 2002.
+2. Data in the report is based on information gathered from Form EIA-858, the Uranium Marketing Annual Survey, which collects data on contracts, deliveries, enrichment services purchased, inventories, fuel assembly use, feed deliveries to enrichers, and market requirements for the next 10 years.
+3. The report was prepared by the U.S. Energy Information Administration (EIA), an independent statistical and analytical agency within the U.S. Department of Energy.
+4. The views presented in the report are independent of approval by any other officer or employee of the United States Government.
+5. The report serves as a valuable resource for understanding and analyzing the uranium market in the United States, with previous editions available on the EIA website.
+6. Definitions for terms used in the report can be found in the Energy Glossary provided by the EIA.
+
+Detailed Section Summaries
+==================================================
+
+Contacts
+--------
+The section on 'Contacts' in the 2023 Uranium Marketing Annual Report provides a list of contents and tables related to various aspects of uranium marketing. It includes information on different types of contacts and their significance in the uranium market. The tables provide detailed data on various aspects of uranium marketing, including prices, supply, and demand. The section highlights the importance of maintaining contacts in the uranium market for effective decision-making and understanding market dynamics. It emphasizes the role of information and data provided by contacts in shaping market trends and strategies.
+
+Table
+-----
+The section on 'Table' in the 2023 Uranium Marketing Annual Report includes tables containing data on uranium purchased, prices, feed deliveries, enrichment services, foreign purchases and sales, and uranium inventories from 2002 to 2023. The tables provide information on uranium sellers, enrichment service sellers, and foreign purchases and sales by U.S. suppliers and owners and operators of U.S. civilian nuclear power reactors. The data presented in the tables offer insights into the uranium market trends and activities in the U.S. civilian nuclear power sector over the specified time period.
+
+2023 Uranium Marketing Annual Report
+------------------------------------
+The 2023 Uranium Marketing Annual Report by the U.S. Energy Information Administration provides detailed data on uranium marketing activities in the United States from 2018 to 2023 and summary data back to 2002. The report is based on information reported on Form EIA-858, Uranium Marketing Annual Survey, which collects data on contracts, deliveries, enrichment services purchased, inventories, and more. The report was prepared independently by the EIA and should not be construed as representing the views of the U.S. Department of Energy or other federal agencies. Previous editions of the report are available on the EIA website, and definitions for terms used in the report can be found in the Energy Glossary.
+
+US. Energy Information Administration | 2023 Uranium Marketing Annual Report
+----------------------------------------------------------------------------
+The 2023 Uranium Marketing Annual Report was prepared by the U.S. Energy Information Administration (EIA), an independent agency within the U.S. Department of Energy. The report provides data, analyses, and forecasts related to uranium marketing. The views expressed in the report do not represent those of the U.S. Department of Energy or other federal agencies. The report was prepared by EIA's Electricity, Renewables, Coal & Nuclear Data Team. For questions about the report, readers can contact the team via email. The report includes tables and contents related to uranium marketing trends and data. It was published in June 2024.
+

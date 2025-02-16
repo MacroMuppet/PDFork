@@ -1,0 +1,147 @@
+{
+  "total_datasets": 28,
+  "total_pairs": 45,
+  "last_updated": "2025-02-16T01:15:14.103548+00:00",
+  "dataset_list": [
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:00:30.108396+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:02:07.385331+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:04:55.085814+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:05:30.007760+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "DUKES_2024_Chapter_5",
+      "generated_at": "2025-02-16T01:05:41.046792+00:00",
+      "total_pairs": 5
+    },
+    {
+      "document_id": "Edison Fined 30 Million 2008 Article",
+      "generated_at": "2025-02-16T01:05:51.225600+00:00",
+      "total_pairs": 4
+    },
+    {
+      "document_id": "LLM Reasoning NO PhD",
+      "generated_at": "2025-02-16T01:06:03.883707+00:00",
+      "total_pairs": 4
+    },
+    {
+      "document_id": "Military Uranium Selling",
+      "generated_at": "2025-02-16T01:06:18.534689+00:00",
+      "total_pairs": 4
+    },
+    {
+      "document_id": "Uranium Cosmic Origins",
+      "generated_at": "2025-02-16T01:06:36.604686+00:00",
+      "total_pairs": 6
+    },
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:09:17.779218+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "DUKES_2024_Chapter_5",
+      "generated_at": "2025-02-16T01:09:29.277695+00:00",
+      "total_pairs": 5
+    },
+    {
+      "document_id": "Edison Fined 30 Million 2008 Article",
+      "generated_at": "2025-02-16T01:09:37.288287+00:00",
+      "total_pairs": 4
+    },
+    {
+      "document_id": "LLM Reasoning NO PhD",
+      "generated_at": "2025-02-16T01:09:50.598300+00:00",
+      "total_pairs": 4
+    },
+    {
+      "document_id": "Military Uranium Selling",
+      "generated_at": "2025-02-16T01:10:05.149766+00:00",
+      "total_pairs": 4
+    },
+    {
+      "document_id": "Uranium Cosmic Origins",
+      "generated_at": "2025-02-16T01:10:19.790831+00:00",
+      "total_pairs": 5
+    },
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:13:32.236562+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:14:03.519627+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "DUKES_2024_Chapter_5",
+      "generated_at": "2025-02-16T01:14:08.078614+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "Edison Fined 30 Million 2008 Article",
+      "generated_at": "2025-02-16T01:14:12.666658+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "LLM Reasoning NO PhD",
+      "generated_at": "2025-02-16T01:14:17.443038+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "Military Uranium Selling",
+      "generated_at": "2025-02-16T01:14:22.038121+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "Uranium Cosmic Origins",
+      "generated_at": "2025-02-16T01:14:26.625016+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "1d4a1a67-3476-4fd1-aae8-9c40a6bde5c0",
+      "generated_at": "2025-02-16T01:14:50.935016+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "DUKES_2024_Chapter_5",
+      "generated_at": "2025-02-16T01:14:55.511954+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "Edison Fined 30 Million 2008 Article",
+      "generated_at": "2025-02-16T01:15:00.117485+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "LLM Reasoning NO PhD",
+      "generated_at": "2025-02-16T01:15:04.947769+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "Military Uranium Selling",
+      "generated_at": "2025-02-16T01:15:09.560344+00:00",
+      "total_pairs": 0
+    },
+    {
+      "document_id": "Uranium Cosmic Origins",
+      "generated_at": "2025-02-16T01:15:14.095028+00:00",
+      "total_pairs": 0
+    }
+  ]
+}

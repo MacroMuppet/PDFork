@@ -1,0 +1,40 @@
+General Summary
+==================================================
+The document provides economic analysis and statistics on U.S. direct investment abroad and foreign direct investment in the United States. It focuses on the U.S. net International Investment Position (IIP) Accounts, which present the dollar value of U.S. financial assets and liabilities with foreign residents. The analysis is presented on a directional basis, classifying direct investment claims and liabilities based on whether the investor is a U.S. resident or foreign resident. The document also includes updates to previously published statistics for U.S. direct investment abroad and foreign direct investment in the United States for 2021-2022. The main goals of the document are to provide a comprehensive overview of economic activity between U.S. residents and foreign residents through direct investment, as well as to offer detailed information on international services and trade in goods and services.
+
+Main Conclusions and Findings
+==================================================
+1. U.S. direct investment abroad and foreign direct investment in the United States have increased from 2021 to 2022, according to revised statistics from the U.S. Bureau of Economic Analysis.
+2. The next release of direct investment by country and industry data is scheduled for July 2025.
+3. Foreign direct investment in the United States by country of foreign parent and ultimate beneficial owner, as well as by industry of U.S. affiliate, has been analyzed for the years 2020-2023.
+4. Monthly statistics on trade in goods and services, as well as related statistics on direct investment, are provided by the BEA and the U.S. Census Bureau.
+5. The direct investment position abroad is based on equity in affiliates and outstanding loans, with changes reflecting financial transactions and other adjustments.
+6. Stay informed about BEA developments through The BEA Wire, email subscription service, or @BEA_News on social media platforms.
+
+Detailed Section Summaries
+==================================================
+
+- U.S. Direct Investment Abroad
+-------------------------------
+increase in investment from the Netherlands, Japan, and the United Kingdom. Manufacturing MNEs accounted for over 50% of U.S. direct investment abroad, with finance and insurance MNEs following. U.S. MNEs earned $577.2 billion in income from their foreign investments in 2023, with a decrease in repatriated profits. The top investing countries in the United States were the Netherlands, Japan, Canada, and the United Kingdom. The U.S. direct investment abroad position increased to $6.68 trillion, with a significant increase in Europe, particularly in Ireland, Switzerland, and the Netherlands, driven by holding company affiliates. The foreign direct investment in the United States position also increased to $5.39 trillion, mainly from investments from Canada, the Netherlands, Japan, and the United Kingdom.
+
+- Foreign Direct Investment in the United States
+------------------------------------------------
+- Manufacturing MNEs accounted for 50.6% of foreign direct investment in the U.S., followed by finance and insurance MNEs at 15.0%.
+- U.S. MNEs earned $577.2 billion in income in 2023 from their investments abroad, a 2.3% increase from 2022.
+- Dividends or repatriated profits decreased by 17.6% to $285.3 billion in 2023.
+- The top investing countries in the U.S. were the Netherlands, Japan, Canada, and the United Kingdom.
+- Foreign direct investment in the U.S. occurs between a foreign parent and its U.S. affiliates, while U.S. direct investment abroad occurs between a U.S. parent and its foreign affiliates.
+
+- Selected Items by Country of Foreign Parent
+---------------------------------------------
+The tables provide data on foreign direct investment in the United States by country of foreign parent and ultimate beneficial owner, as well as by industry of U.S. affiliate. In 2023, all countries had a total FDI position of $5.394 trillion, with Canada, Europe, Austria, Belgium, Denmark, and Finland being key contributors. By country of the foreign parent, the Netherlands, Japan, Canada, and the United Kingdom accounted for half of the total FDI position in the U.S. Manufacturing MNEs had the largest share of investment by industry of the U.S. parent, followed by finance and insurance. U.S. MNEs earned $577.2 billion in income abroad in 2023, with a decrease in dividends repatriated to the U.S. at $285.3 billion.
+
+- Selected Items by Industry of U.S. Affiliate
+----------------------------------------------
+The section provides data on foreign direct investment in the United States by industry of U.S. affiliate for the years 2020-2023. Key findings include the amounts invested in various industries such as other manufacturing, wholesale trade, information, depository institutions, finance, professional services, and holding companies. The data shows fluctuations in investments across different industries over the years. The tables also provide information on direct investment abroad by country of foreign affiliate and industry, as well as dividends and positions abroad. The statistics are part of a broader set of U.S. International Economic News release tables, including data on trade in goods and services and direct investment by country and industry.
+
+- Updates to Previously Published Statistics
+--------------------------------------------
+The U.S. Bureau of Economic Analysis has revised statistics for U.S. direct investment abroad and foreign direct investment in the United States for 2021-2022 with newly available data. Direct investment by country and industry is part of a broader set of U.S. international economic news release tables. Direct investment financial transactions involve financial claims and liabilities between parent groups and their affiliates. The release presents statistics on a directional basis, different from the asset/liability basis in other accounts, and are part of the U.S. net International Investment Position Accounts. Quarterly and annual releases provide a summary of economic activity between U.S. residents and residents of other countries.
+

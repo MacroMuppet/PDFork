@@ -1,0 +1,49 @@
+General Summary
+==================================================
+Jonathan Sheets' assignment for Fin 334 reflects on his portfolio performance, highlighting mistakes made in his healthcare picks and lack of diversification. Despite ranking well in returns, Sharpe, and Alpha/Beta, he acknowledges the importance of following rules to avoid disqualification. Sheets regrets not anticipating market trends like the Fiscal Cliff and missed opportunities with special dividend issuers. The document serves as a learning experience for Sheets, emphasizing the need for thorough research and diversification in portfolio management.
+
+Main Conclusions and Findings
+==================================================
+Conclusions and Findings:
+1. Lack of diversification in the healthcare sector impacted the portfolio negatively.
+2. ALXN and ALGN were poor performers in the portfolio.
+3. SLV held up well despite market conditions.
+4. Failure to foresee the impact of the Fiscal Cliff on the markets.
+5. TCBI did not show expected movement despite strong performance in the summer.
+
+Key Takeaways:
+1. Diversification is essential to mitigate risk in a portfolio.
+2. Market events such as the Fiscal Cliff can significantly impact investment decisions.
+3. Understanding the performance of individual stocks within a sector is crucial for portfolio management.
+4. Reading and understanding all rules and guidelines is important for success in competitions.
+5. Evaluating and adjusting investment strategies based on market conditions is necessary for long-term success.
+
+Detailed Section Summaries
+==================================================
+
+1. Portfolio Review
+-------------------
+The key points and findings from the section about '1. Portfolio Review' include the realization that the healthcare picks in the portfolio were problematic, particularly ALXN and ALGN. The importance of diversification within healthcare picks and the entire portfolio was highlighted. The performance of SLV was surprising given market conditions, and the impact of the Fiscal Cliff on markets was not fully anticipated. It was noted that special dividend issuers should have been considered, and TCBI's lack of movement after a strong summer performance was unexpected. The importance of following all rules and regulations to avoid disqualification was emphasized. Overall, the portfolio was ranked 2nd in returns, 1st in Sharpe ratio, and 1st in Alpha/Beta rankings.
+
+2. Healthcare Picks Performance
+-------------------------------
+The healthcare picks in the portfolio performed poorly, with ALXN and ALGN being particularly disappointing. Diversification within the healthcare sector and the portfolio as a whole could have mitigated some of the losses. SLV held up well despite market conditions, and the impact of the Fiscal Cliff on the markets should have been anticipated. Special dividend issuers could have been a good investment strategy. TCBI remained stagnant despite a strong summer performance. Failure to diversify the portfolio led to a lower score in the competition. Despite these setbacks, the portfolio is currently 2nd in returns, 1st in Sharpe, and 1st in Alpha/Beta rankings. Reading and following all rules is emphasized to avoid disqualification.
+
+3. Diversification
+------------------
+The key points and findings from the section about '3. Diversification' are that the portfolio's healthcare picks were the main issue, with incorrect speculation on ALXN and poor performance from ALGN. The author acknowledges the need for more diversification within the healthcare sector and the portfolio as a whole. The surprising resilience of SLV in the face of market uncertainty and the impact of the Fiscal Cliff on market behavior are also noted. The author regrets not foreseeing these effects and not investing in special dividend issuers. Additionally, the author acknowledges a lack of diversification in the portfolio, which may result in lower scores in the competition.
+
+4. Market Analysis
+------------------
+The key points from the section about '4. Market Analysis' are that the portfolio performance was impacted by healthcare picks like ALXN and ALGN, which did not perform well. The need for diversification within healthcare picks and the portfolio as a whole was highlighted. The performance of SLV was noted to hold up well despite market conditions, and the impact of the Fiscal Cliff on the markets was mentioned. The need to anticipate market events like the Fiscal Cliff and consider investments in special dividend issuers was emphasized. Additionally, the surprising performance of TCBI as a non-mover after a strong summer performance was noted.
+
+5. Lesson Learned
+-----------------
+The key points and findings from the section about 'Lesson Learned' are:
+1. Failure to diversify the portfolio led to poor performance in healthcare picks.
+2. Lack of diversification within healthcare picks and the overall portfolio was a major issue.
+3. SLV performed well despite market conditions.
+4. Failure to anticipate the impact of the Fiscal Cliff on the markets.
+5. Not reading all the rules led to a lower score in the competition.
+6. Despite the challenges, the portfolio ranked 2nd in returns, 1st in Sharpe, and 1st in Alpha/Beta rankings.
+
