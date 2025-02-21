@@ -10,6 +10,9 @@ This project provides a comprehensive PDF processing pipeline that extracts text
   <img src="PDForkProcessDiagram.png" alt="PDFork Process Diagram" width="800"/>
 </p>
 
+<p align="center">
+  <img src="visualize_section_chuck_relationships_relationships_per_pdf.png" alt="Chunk Visualization Example" width="800"/>
+</p>
 ## Features
 
 - Text extraction using multiple methods (PyPDF2, PyMuPDF, OCR)
@@ -447,7 +450,7 @@ python visualize_chunk_relationships.py --doc your_document_id
 ```
 
 <p align="center">
-  <img src="chunk_visualization_example.png" alt="Chunk Visualization Example" width="800"/>
+  <img src="visualize_section_chuck_relationships_relationships_per_pdf.png" alt="Chunk Visualization Example" width="800"/>
 </p>
 
 #### Visualization Features
