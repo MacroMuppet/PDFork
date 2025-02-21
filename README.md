@@ -4,7 +4,7 @@
   <img src="forklogo.jpg" alt="PDFork Logo" width="200"/>
 </p>
 
-This project provides a comprehensive PDF processing pipeline that extracts text, visual elements, and generates AI-powered summaries of PDF documents.
+This project provides a comprehensive PDF processing pipeline that extracts text, visual elements, and enables intelligent conversations with your documents using local LLMs. Chat with your PDFs, generate AI-powered summaries, and visualize document relationships - all while maintaining privacy with offline processing.
 
 <p align="center">
   <img src="PDForkProcessDiagram.png" alt="PDFork Process Diagram" width="800"/>
@@ -13,24 +13,157 @@ This project provides a comprehensive PDF processing pipeline that extracts text
 <p align="center">
   <img src="visualize_section_chuck_relationships_relationships_per_pdf.png" alt="Chunk Visualization Example" width="800"/>
 </p>
-## Features
 
+## System Architecture
+
+<p align="center">
+  <img src="image.png" alt="PDFork Repo Flow Diagram" width="800"/>
+</p>
+
+```
+Input Layer
+├── PDF Files
+└── Configuration
+    ├──> Core Processing
+    │    ├── PDF Extraction Engine
+    │    ├── Text Chunking
+    │    ├── Visual Element Extractor
+    │    └── Semantic Chunker
+    │         │
+    └──> Vector Storage
+         ├── ChromaDB
+         ├── Vector Store Manager
+         └── Embedding Models
+              │
+              v
+        LLM Integration
+        ├── Ollama Interface
+        ├── Query Analyzer
+        └── Response Generator
+             │
+        +----|--------------------+
+        │    │    │               │
+        v    v    v               v
+    Training  Visualization    Output
+     Data    Dashboard       Storage
+```
+
+
+
+### Component Description
+
+1. **Input Layer**
+   - PDF Files: Source documents for processing
+   - Configuration: System settings and model parameters
+
+2. **Core Processing**
+   - PDF Extraction Engine: Multi-method text extraction (PyPDF2, PyMuPDF, OCR)
+   - Text Chunking: Initial text segmentation
+   - Visual Element Extractor: Images, charts, and tables detection
+   - Semantic Chunker: Content-aware text segmentation
+
+3. **Vector Storage**
+   - ChromaDB: Vector database backend
+   - Vector Store Manager: Handles embedding storage and retrieval
+   - Embedding Models: nomic-embed-text and all-minilm
+
+4. **LLM Integration**
+   - Ollama Interface: Local LLM management
+   - Query Analyzer: Smart query processing
+   - Response Generator: Context-aware response creation
+
+5. **Visualization**
+   - Visualization Dashboard: React-based UI
+   - Chunk Graph Generator: Document relationship visualization
+   - React Components: Interactive UI elements
+
+6. **Training Data**
+   - Training Generator: QnA dataset creation
+   - Complexity Analyzer: Content analysis
+   - Question Generator: Dynamic question creation
+
+## Key Capabilities
+
+### 🤖 Chat with Your Documents
+- Interactive conversations with PDFs using local LLMs
+- Smart query analysis for precise information retrieval
+- Multi-document search and cross-referencing
+- Context-aware responses with source citations
+- Support for both general knowledge and specific data queries
+
+### 📊 Advanced Document Processing
 - Text extraction using multiple methods (PyPDF2, PyMuPDF, OCR)
 - Visual element extraction (images, charts, tables)
-- Document summarization using LLMs (OpenAI or Ollama)
+- Document summarization using LLMs
+- Semantic chunk visualization and relationship mapping
+- GPU acceleration support for faster processing
+
+### 🔍 Enhanced Search & Analysis
 - Vector database storage for efficient querying
-- Conversation-based document querying
-- GPU acceleration support for local models
-- Dynamic QnA training data generation
-  - Content-aware question generation
-  - Automatic complexity analysis
-  - Importance-based question scaling
-  - Detailed dataset metadata
-- Interactive Workflow Visualization
-  - React-based visualization dashboard
-  - Step-by-step pipeline explanation
-  - Directory structure visualization
-  - Modern UI with Tailwind CSS
+- Semantic search across multiple documents
+- Content-aware chunk relationships
+- Interactive visualization of document structure
+- Relevance-based result ranking
+
+### 📚 Training Data Generation
+- Dynamic QnA dataset creation
+- Content complexity analysis
+- Importance-based question scaling
+- Comprehensive metadata tracking
+
+### 🎨 Interactive Visualizations
+- React-based workflow dashboard
+- Document chunk relationship graphs
+- Pipeline process visualization
+- Modern UI with Tailwind CSS
+
+## Features
+
+### Document Processing
+- Multi-method text extraction pipeline
+  - PyPDF2 for basic text extraction
+  - PyMuPDF for advanced layout analysis
+  - Tesseract OCR for image-based text
+- Intelligent visual element detection
+  - Automatic chart/table recognition
+  - Image quality enhancement
+  - OCR preprocessing
+- GPU-accelerated local processing
+  - CUDA support for LLMs
+  - Parallel processing capabilities
+  - Optimized resource utilization
+
+### Vector Search
+- ChromaDB vector database integration
+- Semantic chunking with relationship preservation
+- Multiple embedding model support:
+  - nomic-embed-text (primary)
+  - all-minilm (fallback)
+- Configurable similarity thresholds
+- Cross-document search capabilities
+
+### Local LLM Integration
+- Ollama-based offline processing
+- Multiple model support:
+  - mistral (default)
+  - llama2
+  - mixtral
+  - neural-chat
+  - codellama
+- Customizable inference parameters
+- Automatic GPU detection and utilization
+
+### Training Data Generation
+- Content-aware complexity analysis
+- Dynamic question count adjustment
+- Comprehensive metadata tracking
+- Versioned dataset management
+
+### Visualization Tools
+- Interactive chunk relationship graphs
+- React-based process dashboard
+- Directory structure visualization
+- Real-time processing status
 
 ## Prerequisites
 
