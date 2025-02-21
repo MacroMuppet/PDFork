@@ -14,6 +14,12 @@ This project provides a comprehensive PDF processing pipeline that extracts text
   <img src="visualize_section_chuck_relationships_relationships_per_pdf.png" alt="Chunk Visualization Example" width="800"/>
 </p>
 
+
+
+
+## System Architecture
+
+
 ```mermaid
 graph TB
     subgraph Input
@@ -90,15 +96,7 @@ graph TB
     style OL fill:#bfb,stroke:#333
     style VD fill:#fbf,stroke:#333
     style TG fill:#ffb,stroke:#333
-
 ```
-
-
-## System Architecture
-
-<p align="center">
-  <img src="image.png" alt="PDFork Repo Flow Diagram" width="800"/>
-</p>
 
 ```
 Input Layer
