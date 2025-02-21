@@ -1,6 +1,9 @@
 langchain>=0.1.0
-langchain-openai>=0.0.2  # For OpenAI support
-langchain-community>=0.0.10  # For Ollama support
+langchain-core>=0.1.1  # Updated for Pydantic v2 compatibility
+langchain-openai>=0.0.5  # Updated for better Pydantic v2 support
+langchain-community>=0.0.13  # For other community tools
+langchain-ollama>=0.0.5  # Updated for better Ollama embeddings support
+pydantic>=2.5.0  # Explicitly specify Pydantic v2
 python-dotenv>=1.0.0
 PyPDF2>=3.0.0
 PyMuPDF>=1.23.0  # Also known as fitz
@@ -9,3 +12,13 @@ numpy>=1.24.0
 Pillow>=10.0.0
 pytesseract>=0.3.10
 chromadb>=0.4.0 
+spacy>=3.0.0
+networkx>=2.5
+pyvis>=0.1.9
+openai>=1.0.0
+llama-index>=0.1.0
+nltk>=3.8.1  # Added - used in generate_training_data.py
+
+# After installing requirements, run:
+# python -m spacy download en_core_web_sm
+# python -c "import nltk; nltk.download(['punkt', 'punkt_tab', 'averaged_perceptron_tagger', 'universal_tagset'])"

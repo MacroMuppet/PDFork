@@ -1,0 +1,154 @@
+Semantic Chunker Documentation
+=========================
+
+Overview
+--------
+The SemanticChunker is a sophisticated text processing tool that breaks down documents into meaningful, context-aware chunks while preserving semantic relationships and document structure. Unlike simple character-based or token-based chunkers, it considers document structure, semantic boundaries, and content coherence.
+
+Key Features
+-----------
+1. Structure-Aware Chunking
+   - Recognizes document headers and sections
+   - Maintains hierarchical relationships
+   - Preserves section context in chunks
+
+2. Multiple Header Recognition Patterns
+   - Markdown headers (e.g., # Title, ## Subtitle)
+   - Numbered sections (e.g., 1.2.3 Section Name)
+   - Capitalized phrases at line starts
+
+3. Semantic Coherence Analysis
+   - Evaluates sentence similarity
+   - Maintains topic consistency
+   - Handles reference resolution
+
+Chunking Methodology
+------------------
+1. Section Identification
+   - Scans document for structural markers
+   - Creates DocumentSection objects containing:
+     * Title
+     * Content
+     * Heading level
+     * Start/End indices
+
+2. Chunk Creation Process
+   - Respects minimum (100 chars) and maximum (1000 chars) size constraints
+   - Preserves section context by including titles
+   - Maintains sentence boundaries
+   - Avoids splitting mid-sentence
+
+3. Semantic Analysis
+   - Uses spaCy for NLP tasks
+   - Calculates coherence scores between sentences
+   - Ensures topical consistency within chunks
+
+Enhanced Features
+---------------
+1. Metadata Enhancement
+   - Extracts named entities
+   - Identifies key noun phrases
+   - Tracks word count
+   - Records key terms
+
+2. Coherence Scoring
+   - Evaluates semantic relationships between sentences
+   - Considers topic consistency
+   - Handles reference resolution
+   - Returns normalized coherence score (0.0-1.0)
+
+Usage Example
+------------
+Input Text:
+```
+# Main Title
+## Section 1
+This is the first paragraph with some content.
+It continues with more information.
+
+## Section 2
+Another section with different content.
+More details here.
+```
+
+Resulting Chunks:
+1. "Main Title
+    Section 1
+    This is the first paragraph with some content. It continues with more information."
+
+2. "Main Title
+    Section 2
+    Another section with different content. More details here."
+
+Best Practices
+-------------
+1. Document Preparation
+   - Use clear section headers
+   - Maintain consistent formatting
+   - Use proper punctuation
+
+2. Chunk Size Configuration
+   - Adjust min_chunk_size for your use case
+   - Consider max_chunk_size based on your LLM's context window
+   - Balance between coherence and size
+
+3. Performance Optimization
+   - Pre-process text to remove unnecessary whitespace
+   - Use appropriate spaCy model for your needs
+   - Consider batch processing for large documents
+
+Chunk Visualization
+-----------------
+1. Visualization Features
+   - Generates interactive HTML visualization using pyvis
+   - Shows chunk relationships and connections
+   - Displays chunk metadata and content
+   - Supports zooming and node dragging
+
+2. Visualization Components
+   - Nodes: Represent individual chunks
+     * Color-coded by section level
+     * Size indicates chunk length
+     * Hover text shows content preview
+   - Edges: Show semantic relationships
+     * Thickness indicates similarity strength
+     * Direction shows document flow
+     * Hover text displays similarity score
+
+3. Interactive Elements
+   - Zoom in/out for detail
+   - Drag nodes to explore relationships
+   - Click nodes to view full content
+   - Filter by section or similarity threshold
+
+4. Output Format
+   - Saves as interactive HTML file
+   - Compatible with modern web browsers
+   - No additional software required
+   - Easy to share and embed
+
+5. Customization Options
+   - Adjust node colors and sizes
+   - Configure edge appearance
+   - Set similarity thresholds
+   - Modify layout algorithm
+
+Usage Example
+------------
+```python
+from semantic_chunker import SemanticChunker
+from document_mapper import DocumentMapper
+
+# Initialize chunker and mapper
+chunker = SemanticChunker()
+mapper = DocumentMapper()
+
+# Process document and create chunks
+chunks = chunker.create_semantic_chunks(text)
+
+# Generate visualization
+mapper.add_document("doc_id", "Document Title", chunks)
+mapper.visualize_relationships("chunk_visualization.html")
+```
+
+The visualization will be saved as 'chunk_visualization.html' in your working directory. 

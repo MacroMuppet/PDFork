@@ -2,6 +2,8 @@ PDFLCEmbed.py - Functionality Summary
 
 This Python script provides a comprehensive PDF processing and analysis pipeline with the following key features:
 
+[See PDForkProcessDiagram.png for visual representation of the complete pipeline]
+
 1. Text Extraction and Processing
    - Extracts text content from PDF files using PyPDF2
    - Splits text into manageable chunks for processing
@@ -37,6 +39,14 @@ This Python script provides a comprehensive PDF processing and analysis pipeline
    - Supports conversation history
    - Returns context-aware responses
 
+8. Interactive Visualization (viz-test/)
+   - React-based workflow visualization dashboard
+   - Step-by-step pipeline explanation interface
+   - Interactive directory structure visualization
+   - Modern UI implementation with Tailwind CSS
+   - Component-based architecture for maintainability
+   - Real-time step highlighting and descriptions
+
 The script is designed to be used both as a module and as a standalone program, with example usage provided in the __main__ section. It includes comprehensive error handling and logging to ensure robust operation.
 
 Key Dependencies:
@@ -46,4 +56,11 @@ Key Dependencies:
 - PyMuPDF: PDF visual element extraction
 - OpenCV: Image analysis and classification
 - Chroma: Vector database
+- React: Frontend visualization
+- Tailwind CSS: UI styling
+- Vite: Build tooling
+- spaCy: NLP processing (requires additional model installation)
+  Run: python -m spacy download en_core_web_sm
+- NLTK: Text tokenization (requires additional data)
+  Run: python -c "import nltk; nltk.download(['punkt', 'punkt_tab', 'averaged_perceptron_tagger', 'universal_tagset'])"
 - Python standard libraries 

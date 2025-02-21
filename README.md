@@ -1,6 +1,14 @@
 # PDF Processing and Analysis Pipeline
 
+<p align="center">
+  <img src="forklogo.jpg" alt="PDFork Logo" width="200"/>
+</p>
+
 This project provides a comprehensive PDF processing pipeline that extracts text, visual elements, and generates AI-powered summaries of PDF documents.
+
+<p align="center">
+  <img src="PDForkProcessDiagram.png" alt="PDFork Process Diagram" width="800"/>
+</p>
 
 ## Features
 
@@ -15,6 +23,11 @@ This project provides a comprehensive PDF processing pipeline that extracts text
   - Automatic complexity analysis
   - Importance-based question scaling
   - Detailed dataset metadata
+- Interactive Workflow Visualization
+  - React-based visualization dashboard
+  - Step-by-step pipeline explanation
+  - Directory structure visualization
+  - Modern UI with Tailwind CSS
 
 ## Prerequisites
 
@@ -143,6 +156,18 @@ Note: The script already configures Ollama to use GPU through these parameters:
 num_gpu=1  # In get_llm() and get_embeddings()
 ```
 
+4. For visualization dashboard (optional):
+```bash
+# Navigate to viz-test directory
+cd viz-test
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
 ## Directory Structure
 
 - `preprocess/`: Place PDF files here for processing
@@ -156,6 +181,42 @@ num_gpu=1  # In get_llm() and get_embeddings()
   - Contains JSON files with question-answer pairs
   - Includes metadata about generation process
   - One file per processed document
+- `viz-test/`: Interactive workflow visualization
+  - React-based dashboard
+  - Tailwind CSS styling
+  - Pipeline visualization components
+
+## Visualization Dashboard
+
+The project includes an interactive visualization dashboard built with React and Tailwind CSS that helps users understand the PDF processing pipeline.
+
+### Features
+- Interactive workflow diagram showing each processing step
+- Detailed explanations of each pipeline component
+- Visual representation of the output directory structure
+- Modern, responsive design with Tailwind CSS
+- Click-to-learn functionality for each processing step
+
+### Running the Dashboard
+```bash
+cd viz-test
+npm run dev
+```
+
+The dashboard will be available at `http://localhost:5173` by default.
+
+### Dashboard Components
+- PDForkWorkflow: Main workflow visualization component
+- Step-by-step process explanation
+- Directory structure visualization
+- Interactive tooltips and descriptions
+
+### Technology Stack
+- React for UI components
+- Vite for build tooling
+- Tailwind CSS for styling
+- Lucide React for icons
+- Modern ES6+ JavaScript
 
 ## Usage
 
@@ -182,6 +243,75 @@ The script will:
 - Generate summaries using the specified LLM
 - Create searchable vector embeddings
 - Move processed files to the `finished` directory
+
+### Querying Documents
+
+After processing, you can interactively query your documents using the local LLM:
+
+```bash
+# Query a specific document
+python PDFLCEmbed_semantchunk_mapper.py --provider ollama --model mistral --query --doc-id "your_document_id"
+
+# Query across all processed documents
+python PDFLCEmbed_semantchunk_mapper.py --provider ollama --model mistral --query
+```
+
+The query mode provides:
+- Interactive chat interface with your documents
+- Two-stage response generation:
+  1. Initial attempt using LLM's knowledge
+  2. Document search if specific data is needed
+- Context-aware responses with source citations
+- Support for follow-up questions
+
+#### Query Features
+
+1. Smart Query Analysis:
+   - Automatically detects when to search documents
+   - Recognizes requests for specific data or statistics
+   - Identifies questions about particular entities or time periods
+   - Handles comparative questions across documents
+
+2. Document Search:
+   - Semantic search across document chunks
+   - Relevance-based result ranking
+   - Multiple document context integration
+   - Source document attribution
+
+3. Response Generation:
+   - Combines LLM knowledge with document facts
+   - Provides precise citations when using document data
+   - Maintains conversation context
+   - Handles clarifying questions
+
+Example Queries:
+```bash
+> What is the general concept of nuclear enrichment?
+# LLM provides general knowledge response
+
+> What was Mexico's nuclear capacity in 2023?
+# LLM searches documents for specific data
+
+> Compare the nuclear policies of different countries mentioned in the documents.
+# LLM analyzes across multiple documents
+```
+
+#### Query Best Practices
+
+1. For Specific Data:
+   - Include specific terms, dates, or numbers in your question
+   - Mention document sections if known
+   - Ask for comparisons or trends
+
+2. For General Information:
+   - Start with broad questions
+   - Use follow-up questions for details
+   - Ask for explanations or definitions
+
+3. For Multiple Documents:
+   - Specify document IDs if targeting specific documents
+   - Use comparative questions to analyze across documents
+   - Ask for synthesis of information from different sources
 
 ### Generating Training Data
 
@@ -306,6 +436,69 @@ The generated QnA datasets are stored in the `training_data/` directory with the
    - Keep the `training_data/` directory backed up
    - Version control recommended for tracking changes
    - Consider archiving older versions periodically
+
+### Chunk Visualization
+
+The project now includes an interactive visualization tool for document chunks and their relationships:
+
+```bash
+# Generate chunk visualization for a specific document
+python visualize_chunk_relationships.py --doc your_document_id
+```
+
+<p align="center">
+  <img src="chunk_visualization_example.png" alt="Chunk Visualization Example" width="800"/>
+</p>
+
+#### Visualization Features
+- Interactive HTML-based visualization using pyvis
+- Node-based representation of document chunks
+- Edge connections showing semantic relationships
+- Dark blue theme for better readability
+- Zoom and drag functionality
+
+#### Node Information
+- Star-shaped nodes represent document chunks
+- Node size indicates chunk length
+- Node color indicates section level
+- Hover text shows:
+  - Main topic
+  - Content preview
+  - Extracted entities
+  - Key terms
+
+#### Edge Information
+- Edge thickness shows similarity strength
+- Edge color changes on node selection
+- Hover text displays:
+  - Similarity score
+  - Shared topics between chunks
+  - Relationship type
+
+#### Interactive Features
+- Click nodes to highlight connections
+- Drag nodes to explore relationships
+- Zoom in/out for detail
+- Hover for content preview
+- Filter by similarity threshold
+
+#### Customization Options
+```python
+# Example: Customize visualization parameters
+visualizer = ChunkVisualizer(provider="ollama", model_name="nomic-embed-text")
+visualizer.create_visualization(
+    doc_id="your_document",
+    output_file="custom_visualization.html",
+    threshold=0.5  # Adjust similarity threshold
+)
+```
+
+The visualization helps in:
+- Understanding document structure
+- Identifying related content
+- Analyzing topic distribution
+- Validating chunk coherence
+- Exploring semantic connections
 
 ## Performance Notes
 

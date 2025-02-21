@@ -8,6 +8,7 @@ from langchain_ollama import OllamaEmbeddings
 from dotenv import load_dotenv
 import os
 import nltk
+from PDFLCEmbed_semantchunk_mapper import sanitize_collection_name, verify_gpu_availability
 nltk.download('punkt')  # Download the punkt tokenizer data
 
 load_dotenv()
@@ -51,9 +52,14 @@ def load_vector_store(doc_id, provider="openai", model_name=None):
     if not load_path.exists():
         raise ValueError(f"No vector store found for document: {doc_id}")
     
+    # Use sanitized collection name
+    collection_name = sanitize_collection_name(doc_id)
+    print(f"Using collection name: {collection_name}")
+    
     embeddings = get_embeddings(provider, model_name)
     vectorstore = Chroma(
         persist_directory=str(load_path),
+        collection_name=collection_name,
         embedding_function=embeddings
     )
     
@@ -223,7 +229,7 @@ def create_training_dataset(doc_id, provider="openai", model_name=None, sentence
     """Create a QnA training dataset from a document's vector store"""
     print(f"\nProcessing document: {doc_id}")
     
-    # Load vector store
+    # Load vector store with sanitized collection name
     try:
         vectorstore = load_vector_store(doc_id, provider, model_name)
     except Exception as e:
@@ -233,16 +239,21 @@ def create_training_dataset(doc_id, provider="openai", model_name=None, sentence
     # Initialize LLM
     llm = get_llm(provider, model_name)
     
-    # Get all document chunks - using collection.get() instead of retriever
+    # Get all document chunks using the collection API
     try:
+        collection = vectorstore._collection
+        if not collection:
+            print(f"No collection found for {doc_id}")
+            return None
+            
         # Get all chunks from the collection
-        all_docs = vectorstore.get()
-        if not all_docs or not all_docs['documents']:
+        results = collection.get()
+        if not results or not results['documents']:
             print(f"No content found in vector store for {doc_id}")
             return None
         
-        chunks = all_docs['documents']
-        metadatas = all_docs['metadatas']
+        chunks = results['documents']
+        metadatas = results['metadatas']
         total_chunks = len(chunks)
         
         print(f"Found {total_chunks} content chunks")
@@ -376,15 +387,22 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="Generate training data from processed documents")
-    parser.add_argument("--provider", choices=["openai", "ollama"], default="openai",
-                      help="Choose the AI provider (default: openai)")
-    parser.add_argument("--model", type=str, default=None,
-                      help="Specify the model name (default: provider's default model)")
+    parser.add_argument("--provider", choices=["openai", "ollama"], default="ollama",
+                      help="Choose the AI provider (default: ollama)")
+    parser.add_argument("--model", type=str, default="mistral",
+                      help="Specify the model name (default: mistral for LLM, nomic-embed-text for embeddings)")
     parser.add_argument("--sentences", type=int, default=3,
                       help="Number of sentences per Q&A chunk (default: 3)")
     parser.add_argument("--docs", nargs="+", help="Specific document IDs to process (space-separated)")
     
     args = parser.parse_args()
+    
+    # Print configuration
+    print("\nConfiguration:")
+    print(f"Provider: {args.provider}")
+    print(f"Model: {args.model}")
+    print(f"Sentences per chunk: {args.sentences}")
+    print(f"Documents to process: {args.docs if args.docs else 'all'}\n")
     
     process_all_documents(
         provider=args.provider,
