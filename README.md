@@ -14,6 +14,86 @@ This project provides a comprehensive PDF processing pipeline that extracts text
   <img src="visualize_section_chuck_relationships_relationships_per_pdf.png" alt="Chunk Visualization Example" width="800"/>
 </p>
 
+```mermaid
+graph TB
+    subgraph Input
+        PDF[PDF Files]
+        Config[Configuration]
+    end
+
+    subgraph Core_Processing
+        PE[PDF Extraction Engine]
+        TC[Text Chunking]
+        VE[Visual Element Extractor]
+        SC[Semantic Chunker]
+    end
+
+    subgraph Vector_Storage
+        DB[(ChromaDB)]
+        VS[Vector Store Manager]
+        EM[Embedding Models]
+    end
+
+    subgraph LLM_Integration
+        OL[Ollama Interface]
+        QA[Query Analyzer]
+        RC[Response Generator]
+    end
+
+    subgraph Visualization
+        VD[Visualization Dashboard]
+        CG[Chunk Graph Generator]
+        RD[React Components]
+    end
+
+    subgraph Training_Data
+        TG[Training Generator]
+        CA[Complexity Analyzer]
+        QG[Question Generator]
+    end
+
+    %% Input connections
+    PDF --> PE
+    Config --> OL
+    Config --> EM
+
+    %% Core Processing flow
+    PE --> TC
+    PE --> VE
+    TC --> SC
+    SC --> VS
+
+    %% Vector Storage connections
+    VS --> DB
+    EM --> VS
+    DB --> QA
+
+    %% LLM Integration flow
+    QA --> RC
+    OL --> RC
+    DB --> RC
+
+    %% Visualization connections
+    VS --> CG
+    CG --> VD
+    RD --> VD
+
+    %% Training Data generation
+    SC --> CA
+    CA --> QG
+    DB --> TG
+    QG --> TG
+
+    %% Styles
+    style PDF fill:#f9f,stroke:#333
+    style DB fill:#bbf,stroke:#333
+    style OL fill:#bfb,stroke:#333
+    style VD fill:#fbf,stroke:#333
+    style TG fill:#ffb,stroke:#333
+
+```
+
+
 ## System Architecture
 
 <p align="center">
