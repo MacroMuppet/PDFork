@@ -124,10 +124,29 @@ If needed, you can further use the `web_scraper.py` file to scrape the web page 
 - Balance between coverage and efficiency: more questions for important content, fewer for simple content
 - Use content-aware prompts to generate diverse question types (factual, analytical, relational)
 - Implement graceful fallbacks for content analysis (e.g., default to medium importance if scoring fails)
+- For chart detection, use a multi-feature approach combining line detection, color analysis, text distribution, and histogram features
+- For table detection, analyze grid structures, text alignment patterns, and uniform row heights
+- Use confidence scoring systems instead of binary classification for more accurate visual element identification
+- Remove aspect ratio limitations when detecting charts and tables as they can have various shapes
+- Apply adaptive thresholding for better line detection in tables with different lighting conditions
+- Use statistical analysis (mean, standard deviation) to detect uniform patterns in charts and tables
+- Skip very small images during visual element extraction as they're likely icons or decorations
+- Provide debug information during classification to help troubleshoot detection issues
+- Implement specialized detection for histogram/bar charts by analyzing rectangular contours
 
 # Scratchpad
 
-Task: Enhance document processing pipeline with dynamic QnA generation
+Task: Improve chart and table detection accuracy in PDF processing
+[X] Analyze current implementation of chart and table detection
+[X] Implement multi-feature confidence scoring system for classification
+[X] Enhance chart detection with color analysis, text patterns, and histogram features
+[X] Improve table detection with grid analysis, text alignment, and row uniformity
+[X] Remove aspect ratio limitations for more flexible detection
+[X] Add debug information to help troubleshoot classification
+[X] Maintain backward compatibility with legacy functions
+[X] Update documentation with new detection capabilities
+
+Previous Task: Enhance document processing pipeline with dynamic QnA generation
 [X] Create generate_training_data.py script for QnA dataset creation
 [X] Implement content complexity analysis
 [X] Add importance scoring using LLM
